@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-diagnostico{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #006071, #fff);
+}
+
+.registro-diagnostico{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    max-width: 80%;
+    width: 100%;
+    max-height: 85%;
+    height: 100%;
+    border: 3px solid #21d2cd;
+
+}
+
+.registro-diagnostico .search{
+    height: 20%;
+}
+
+.registro-diagnostico form{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.registro-diagnostico form .top{
+    display: flex;
+    height: 80%;
+}
+
+.registro-diagnostico form .right{
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registro-diagnostico form .right .input,
+.registro-diagnostico form .left .input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.registro-diagnostico form .right .input label,
+.registro-diagnostico form .left .input label{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.registro-diagnostico form .right .input input,
+.registro-diagnostico form .left .input input,
+.registro-diagnostico form .right .input select{
+    padding: 5px 15px 5px 10px;
+    outline: none;
+    border: 1px solid #21d2cd;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+.registro-diagnostico form .left{
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-diagnostico .button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.body-diagnostico .button button,
+.body-diagnostico .button a{
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 16px;
+    background: none;
+    background: #21d2cd;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.body-diagnostico .button button:hover,
+.body-diagnostico .button a:hover{
+    color: #fff;
+    transform: scale(.95);
+}
+
+textarea{
+    font-weight: 300;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: none;
+    color: #000;
+    border: 1px solid #21d2cd;
+    border-radius: 10px;
+    transition: all 300ms;
+    outline: none;
+    cursor: text;
+}
+
+.registro-diagnostico .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.registro-diagnostico .search form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: row;
+}
+
+.search form input{
+    padding: 6px 10px;
+    width: 30%;
+    font-size: 17px;
+    background: none;
+    font-weight: 300;
+    color: #000;
+    border: 1px solid #21d2cd;
+    border-radius: 10px;
+    cursor: text;
+    transition: all 300ms;
+    margin-right: 25px;
+    outline: none;
+}
+
+.search form button{
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 16px;
+    background: none;
+    background: #21d2cd;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.search form button:hover{
+    color: #fff;
+    transform: scale(0.95);
+}
+
+.button {
+  display: flex;
+  justify-content: space-between; 
+  gap: 1rem; 
+  margin-top: 1.5rem;
+}
+
+.button a,
+.button button {
+  flex: 1; 
+  text-align: center;
+}

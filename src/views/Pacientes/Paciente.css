@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-pacientes{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #006071, #fff);
+}
+
+.registro{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    max-width: 80%;
+    width: 100%;
+    max-height: 85%;
+    height: 100%;
+    border: 3px solid #21d2cd;
+
+}
+
+.registro .search{
+    height: 20%;
+}
+
+.registro form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.registro form .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.registro form .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro form .right .input,
+.registro form .left .input{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.registro form .right .input label,
+.registro form .left .input label{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.registro form .right .input input,
+.registro form .left .input input,
+.registro form .right .input select{
+    padding: 5px 15px 5px 10px;
+    outline: none;
+    border: 1px solid #21d2cd;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+.registro form .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-pacientes .button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.body-pacientes .button button,
+.body-pacientes .button a{
+    text-decoration: none;
+    padding: 8px 50px;
+    font-size: 16px;
+    background: none;
+    background: #21d2cd;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.body-pacientes .button button:hover,
+.body-pacientes .button a:hover{
+    color: #fff;
+    transform: scale(.95);
+}

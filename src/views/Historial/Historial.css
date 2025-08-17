@@ -1,0 +1,85 @@
+/* ...existing code... */
+:root {
+  --primary: #2fb7a1;
+  --ink: #214a67;
+  --bg: #f4f7ff;
+  --panel: #fff;
+  --muted: #6b93a6;
+}
+
+.historial-container {
+  background: var(--panel);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(47,183,161,0.07);
+  padding: 2.5rem 2rem;
+  max-width: 600px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.historial-container h2 {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.historial-list {
+  width: 100%;
+  margin-top: 1.2rem;
+  background: #f9fcff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(47,183,161,0.06);
+  padding: 1.2rem;
+}
+
+.historial-item {
+  border-bottom: 1px solid #eaf0ff;
+  padding: 0.8rem 0;
+  color: var(--ink);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.historial-item:last-child {
+  border-bottom: none;
+}
+
+.historial-item .fecha {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.historial-item .detalle {
+  font-weight: 500;
+}
+
+.btn.soft {
+  background: #eaf7f5;
+  color: var(--primary);
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .historial-container {
+    padding: 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+  .historial-list {
+    padding: 0.7rem;
+  }
+  .historial-item {
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+  }
+}
+/* ...existing code... */

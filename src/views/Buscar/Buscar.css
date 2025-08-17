@@ -1,0 +1,75 @@
+/* src/views/Buscar/Buscar.css */
+:root {
+  --primary: #2fb7a1;
+  --ink: #214a67;
+  --bg: #f4f7ff;
+  --panel: #fff;
+  --muted: #6b93a6;
+}
+
+.buscar-container {
+  background: var(--panel);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(47,183,161,0.07);
+  padding: 2.5rem 2rem;
+  max-width: 500px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buscar-container form {
+  display: flex;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.buscar-container input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #dbe7ff;
+  background: #f9fcff;
+  color: var(--ink);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.buscar-container input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(47,183,161,0.12);
+}
+
+.buscar-container button {
+  padding: 0.7rem 1.2rem;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(47,183,161,0.12);
+  transition: background 0.2s;
+}
+
+.buscar-container button:hover {
+  background: #1e9783;
+}
+
+@media (max-width: 600px) {
+  .buscar-container {
+    padding: 1.2rem 0.7rem;
+    max-width: 98vw;
+  }
+  .buscar-container form {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .buscar-container button,
+  .buscar-container input {
+    font-size: 0.95rem;
+    padding: 0.55rem 0.7rem;
+  }
+}
