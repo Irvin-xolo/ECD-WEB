@@ -31,6 +31,7 @@ export default function Dashboard({ onExit }) {
         <nav className="side-nav">
           <Link to="/" className="active">{icon("dashboard")} Panel</Link>
           <Link to="/pacientes/buscar">{icon("overview")} Buscar Paciente</Link>
+          <Link to="/pacientes/citaslista">{icon("calendar")} Citas</Link>
           <Link to="/pacientes/citas">{icon("calendar")} Registrar Citas</Link>
           <Link to="/pacientes/diagnostico">{icon("report")} Diagnóstico</Link>
           <Link to="/pacientes/historial">{icon("history")} Histórico</Link>

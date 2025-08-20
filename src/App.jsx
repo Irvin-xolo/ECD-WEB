@@ -7,6 +7,7 @@ import Buscar from "./views/Buscar/Buscar";
 import Historial from "./views/Historial/Historial";
 import Registro from "./views/Registro/Registro";
 import Citas from "./views/Citas/Citas";
+import CitasLista from "./views/CitaListas/CitasLista";
 import AvisoPrivacidad from "./views/AvisoDePrivacidad/Avisodeprivacidad";
 import Registrarse from "./views/Registro/Registrarse";
 import LoginPersonal from "./views/LoginPersonal/Login";
@@ -22,6 +23,8 @@ function App() {
       <Route path="/pacientes/historial" element={<Historial />} />
       <Route path="/pacientes/registro" element={<Registro />} />
       <Route path="/pacientes/citas" element={<Citas />} />
+      <Route path="/pacientes/citaslista" element={<CitasLista />} />
+      <Route path="/pacientes/diagnostico" element={<Diagnostico />} />
       <Route path="/aviso-privacidad" element={<AvisoPrivacidad />} />
       <Route path="/pacientes/registrarse" element={<Registrarse />} />
       <Route path="/loginpersonal" element={<LoginPersonal />} />

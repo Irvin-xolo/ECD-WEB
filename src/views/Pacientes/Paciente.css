@@ -1,109 +1,143 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .body-pacientes{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #006071, #fff);
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #006071, #fff);
+  padding: 24px 16px;
 }
 
 .registro{
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    max-width: 80%;
-    width: 100%;
-    max-height: 85%;
-    height: 100%;
-    border: 3px solid #21d2cd;
-
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-width: 80%;
+  width: 100%;
+  border: 3px solid #21d2cd;
+  padding: 24px 28px 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.06);
 }
 
 .registro .search{
-    height: 20%;
+  height: 20%;
+}
+
+.registro-title{
+  text-align: center;
+  color: #2fb7a1;
+  margin-bottom: 14px;
+  font-weight: 800;
 }
 
 .registro form{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .registro form .top{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 18px 36px;
+  margin-top: 6px;
 }
 
-.registro form .right{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.registro form .right,
+.registro form .left{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
 }
 
 .registro form .right .input,
 .registro form .left .input{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 
 .registro form .right .input label,
 .registro form .left .input label{
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 6px 0 6px;
+  color: #113c3a;
 }
 
 .registro form .right .input input,
 .registro form .left .input input,
-.registro form .right .input select{
-    padding: 5px 15px 5px 10px;
-    outline: none;
-    border: 1px solid #21d2cd;
-    font-size: 16px;
-    border-radius: 5px;
-    font-weight: 300;
+.registro form .right .input select,
+.registro form .left .input select{
+  padding: 10px 14px;
+  outline: none;
+  border: 2px solid #21d2cd;
+  font-size: 15px;
+  border-radius: 8px;
+  font-weight: 400;
+  background: #fff;
+  transition: box-shadow .2s ease, border-color .2s ease;
 }
 
-.registro form .left{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.registro form .right .input input:focus,
+.registro form .left .input input:focus,
+.registro form .right .input select:focus,
+.registro form .left .input select:focus{
+  border-color: #2fb7a1;
+  box-shadow: 0 0 0 3px rgba(47,183,161,.18);
 }
 
 .body-pacientes .button{
-    display: flex;
-    justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 36px;
+  align-items: center;
+  margin-top: 18px;
+  padding-top: 8px;
 }
 
 .body-pacientes .button button,
 .body-pacientes .button a{
-    text-decoration: none;
-    padding: 8px 50px;
-    font-size: 16px;
-    background: none;
-    background: #21d2cd;
-    border: 1px solid #000;
-    color: #000;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 300ms;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 10px 26px;
+  font-size: 16px;
+  background: #21d2cd;
+  border: 2px solid #21d2cd;
+  color: #063533;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 200ms, background 200ms, color 200ms, border-color 200ms;
+  width: 80%;
+  justify-self: center;
 }
 
 .body-pacientes .button button:hover,
 .body-pacientes .button a:hover{
-    color: #fff;
-    transform: scale(.95);
+  color: #042a28;
+  background: #1cc1bc;
+  border-color: #1cc1bc;
+  transform: translateY(1px) scale(.985);
+}
+
+@media (max-width: 900px){
+  .registro{ max-width: 92%; padding: 20px; }
+  .registro form .top{ flex-direction: column; align-items: center; }
+  .registro form .right, .registro form .left{ width: 100%; }
+  .registro form .right .input, .registro form .left .input{ width: 100%; }
+  .body-pacientes .button{ grid-template-columns: 1fr; row-gap: 12px; }
+  .body-pacientes .button button, .body-pacientes .button a{ width: 100%; }
 }
